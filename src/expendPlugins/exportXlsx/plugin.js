@@ -80,7 +80,7 @@ function createExportDialog(url) {
                 </select>
         </div>`;
 
-        $("body").append(
+         $("#" + Store.container).after(
             replaceHtml(modelHTML, {
                 id: "luckysheet-export-xlsx",
                 addclass: "luckysheet-export-xlsx",

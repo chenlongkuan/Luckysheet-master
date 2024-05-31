@@ -531,7 +531,7 @@ const menuButton = {
                 });
 
                 //luckysheet-icon-fmt-other-menuButton_sub
-                $("body").append(menu + submenu);
+                 $("#" + Store.container).after(menu + submenu);
                 $menuButton = $("#" + menuButtonId).width(250);
                 _this.focus($menuButton);
 
@@ -616,7 +616,7 @@ const menuButton = {
 
                     let menu = replaceHtml(_this.menu, { id: "font-family", item: itemset, subclass: "", sub: "" });
 
-                    $("body").append(menu);
+                     $("#" + Store.container).after(menu);
                     $menuButton = $("#" + menuButtonId).width(200);
                     _this.focus($menuButton);
 
@@ -699,7 +699,7 @@ const menuButton = {
                         resetColor: locale_toolbar.resetColor,
                     });
 
-                    $("body").append(menu);
+                     $("#" + Store.container).after(menu);
                     $menuButton = $("#" + menuButtonId);
 
                     $("#" + menuButtonId)
@@ -878,7 +878,7 @@ const menuButton = {
                     resetColor: locale_toolbar.resetColor,
                 });
 
-                $("body").append(menu);
+                 $("#" + Store.container).after(menu);
                 $menuButton = $("#" + menuButtonId);
 
                 $("#" + menuButtonId)
@@ -1048,7 +1048,7 @@ const menuButton = {
 
                     let menu = replaceHtml(_this.menu, { id: "font-size", item: itemset, subclass: "", sub: "" });
 
-                    $("body").append(menu);
+                     $("#" + Store.container).after(menu);
                     $menuButton = $("#" + menuButtonId).width(150);
                     _this.focus($menuButton, 10);
 
@@ -1459,7 +1459,7 @@ const menuButton = {
                     resetColor: locale_toolbar.resetColor,
                 });
 
-                $("body").append(menu + colormenu + submenu);
+                 $("#" + Store.container).after(menu + colormenu + submenu);
                 $menuButton = $("#" + menuButtonId).width(170);
                 _this.focus($menuButton, "border-all");
 
@@ -1734,7 +1734,7 @@ const menuButton = {
 
                 let menu = replaceHtml(_this.menu, { id: "merge-menu", item: itemset, subclass: "", sub: "" });
 
-                $("body").append(menu);
+                 $("#" + Store.container).after(menu);
                 $menuButton = $("#" + menuButtonId);
                 _this.focus($menuButton);
 
@@ -1842,7 +1842,7 @@ const menuButton = {
 
                 let menu = replaceHtml(_this.menu, { id: "align-menu", item: itemset, subclass: "", sub: "" });
 
-                $("body").append(menu);
+                 $("#" + Store.container).after(menu);
                 $menuButton = $("#" + menuButtonId).width(120);
                 _this.focus($menuButton);
 
@@ -1927,7 +1927,7 @@ const menuButton = {
 
                 let menu = replaceHtml(_this.menu, { id: "valign-menu", item: itemset, subclass: "", sub: "" });
 
-                $("body").append(menu);
+                 $("#" + Store.container).after(menu);
                 $menuButton = $("#" + menuButtonId).width(120);
                 _this.focus($menuButton, "bottom");
 
@@ -2003,7 +2003,7 @@ const menuButton = {
 
                 let menu = replaceHtml(_this.menu, { id: "textwrap-menu", item: itemset, subclass: "", sub: "" });
 
-                $("body").append(menu);
+                 $("#" + Store.container).after(menu);
                 $menuButton = $("#" + menuButtonId).width(120);
                 _this.focus($menuButton, "clip");
 
@@ -2097,7 +2097,7 @@ const menuButton = {
 
                 let menu = replaceHtml(_this.menu, { id: "rotation-menu", item: itemset, subclass: "", sub: "" });
 
-                $("body").append(menu);
+                 $("#" + Store.container).after(menu);
 
                 // 文字旋转总 Stack Vertically 太长了，拉宽到160
                 $menuButton = $("#" + menuButtonId).width(160);
@@ -2163,7 +2163,7 @@ const menuButton = {
 
                 let menu = replaceHtml(_this.menu, { id: "freezen-menu", item: itemset, subclass: "", sub: "" });
 
-                $("body").append(menu);
+                 $("#" + Store.container).after(menu);
                 $menuButton = $("#" + menuButtonId).width(170);
 
                 $menuButton.find(".luckysheet-cols-menuitem").click(function() {
@@ -2564,7 +2564,7 @@ const menuButton = {
 
                 let menu = replaceHtml(_this.menu, { id: "autofilter", item: itemset, subclass: "", sub: "" });
 
-                $("body").append(menu);
+                 $("#" + Store.container).after(menu);
                 $menuButton = $("#" + menuButtonId).width(150);
 
                 $menuButton.find(".luckysheet-cols-menuitem").click(function() {
@@ -2673,7 +2673,7 @@ const menuButton = {
 
                 let menu = replaceHtml(_this.menu, { id: "seachmore", item: itemset, subclass: "", sub: "" });
 
-                $("body").append(menu);
+                 $("#" + Store.container).after(menu);
                 $menuButton = $("#" + menuButtonId).width(180);
 
                 $menuButton.find(".luckysheet-cols-menuitem").click(function() {
@@ -2821,7 +2821,7 @@ const menuButton = {
 
                 let menu = replaceHtml(_this.menu, { id: "function-menu", item: itemset, subclass: "", sub: "" });
 
-                $("body").append(menu);
+                 $("#" + Store.container).after(menu);
                 $menuButton = $("#" + menuButtonId).width(180);
 
                 $menuButton.find(".luckysheet-cols-menuitem").click(function() {
@@ -3132,7 +3132,7 @@ const menuButton = {
                     subclass: "luckysheet-menuButton-sub",
                 });
 
-                $("body").append(menu + submenu + submenu2 + submenu3 + submenu4 + submenu6);
+                 $("#" + Store.container).after(menu + submenu + submenu2 + submenu3 + submenu4 + submenu6);
                 $menuButton = $("#" + menuButtonId).width(190);
                 $("#luckysheet-icon-highlightCellRule-menuButton").width(160);
                 $("#luckysheet-icon-projectSelectRule-menuButton").width(180);
@@ -3559,7 +3559,7 @@ const menuButton = {
             let itemset = _this.createButtonMenu(itemdata);
             let menu = replaceHtml(_this.menu, { id: "postil", item: itemset, subclass: "", sub: "" });
 
-            $("body").append(menu);
+             $("#" + Store.container).after(menu);
             $menuButton = $("#" + menuButtonId).width(150);
 
             $menuButton.find(".luckysheet-cols-menuitem").click(function() {
@@ -3634,7 +3634,7 @@ const menuButton = {
 
                 let menu = replaceHtml(_this.menu, { id: "print", item: itemset, subclass: "", sub: "" });
 
-                $("body").append(menu);
+                 $("#" + Store.container).after(menu);
                 $menuButton = $("#" + menuButtonId).width(180);
 
                 $menuButton.find(".luckysheet-cols-menuitem").click(function() {
@@ -4826,11 +4826,7 @@ const menuButton = {
         }
 
         if ($("#luckysheetTextSizeTest").length == 0) {
-            $(
-                '<span id="luckysheetTextSizeTest" style="float:left;white-space:nowrap;visibility:hidden;margin:0;padding:0;">' +
-                    text +
-                    "</span>",
-            ).appendTo($("body"));
+            $("#"+Store.container).after('<span id="luckysheetTextSizeTest" style="float:left;white-space:nowrap;visibility:hidden;margin:0;padding:0;">' +text +"</span>");
         }
 
         let o = $("#luckysheetTextSizeTest")

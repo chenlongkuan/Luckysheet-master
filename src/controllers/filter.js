@@ -868,7 +868,7 @@ function initialFilterHandler(){
             }
             //颜色筛选子菜单
             $("#luckysheet-filter-orderby-color-submenu").remove();
-            $("body").append('<div id="luckysheet-filter-orderby-color-submenu" class="luckysheet-cols-menu luckysheet-mousedown-cancel">'+content+'</div>');
+             $("#" + Store.container).after('<div id="luckysheet-filter-orderby-color-submenu" class="luckysheet-cols-menu luckysheet-mousedown-cancel">'+content+'</div>');
             let $t = $("#luckysheet-filter-orderby-color-submenu").end();
             let $con = $(this).parent();
             let winW = $(window).width(), winH = $(window).height();

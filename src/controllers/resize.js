@@ -106,7 +106,7 @@ export default function luckysheetsizeauto(isRefreshCanvas=true) {
         morediv = '<div id="luckysheet-icon-morebtn-div" class="luckysheet-wa-editor" style="position:absolute;top:'+ (Store.infobarHeight + Store.toolbarHeight + $("#" + Store.container).offset().top + $("body").scrollTop()) +'px;right:0px;z-index:1003;padding:5.5px;visibility:hidden;height:auto;white-space:initial;"></div>';
 
     if($("#luckysheet-icon-morebtn-div").length == 0){
-        $("body").append(morediv);
+        $("#" + Store.container).after(morediv);
     }
 
     // $("#luckysheet-icon-morebtn-div").hide();

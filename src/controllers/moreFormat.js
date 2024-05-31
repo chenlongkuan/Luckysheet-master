@@ -1127,7 +1127,7 @@ const luckysheetMoreFormat = {
                       '</div>';
         }
 
-        $("body").append(replaceHtml(modelHTML, { 
+         $("#" + Store.container).after(replaceHtml(modelHTML, { 
             "id": "luckysheet-moreFormat-dialog", 
             "addclass": "luckysheet-moreFormat-dialog", 
             "title": title, 

@@ -79,7 +79,7 @@ const luckysheetSearchReplace = {
             "</div>" +
             "</div>";
 
-        $("body").append(
+         $("#" + Store.container).after(
             replaceHtml(modelHTML, {
                 id: "luckysheet-search-replace",
                 addclass: "luckysheet-search-replace",
