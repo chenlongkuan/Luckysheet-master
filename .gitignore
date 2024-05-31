@@ -1,0 +1,12 @@
+.DS_Store
+node_modules
+package-lock.json
+yarn.lock
+dist
+docs/.vuepress/dist
+src/expendPlugins/print/print.js
+
+.idea
+.history
+.vs
+.vscode
