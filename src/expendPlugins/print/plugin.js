@@ -1,5 +1,5 @@
 import { seriesLoadScripts, loadLinks, $$, arrayRemoveItem } from "../../utils/util";
-import { luckysheetPrint } from "./print";
+
 import Store from "../../store";
 
 // Dynamically load dependent scripts and styles
@@ -17,17 +17,6 @@ const dependLinks = [
 function print(options, config, isDemo) {
     const data = options.data;
     // loadLinks(dependLinks);
-
-    // seriesLoadScripts(dependScripts, null, function() {});
-    if (luckysheetPrint) {
-        arrayRemoveItem(Store.asyncLoad, "print");
-        Store.luckysheetPrint = luckysheetPrint;
-        const link = document.createElement("link");
-        link.setAttribute("rel", "stylesheet");
-        link.setAttribute("type", "text/css");
-        link.setAttribute("href", "./expendPlugins/print/print.css");
-        document.head.appendChild(link);
-    }
 }
 
 export { print };
