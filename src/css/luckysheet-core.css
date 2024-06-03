@@ -49,7 +49,7 @@
     -o-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
 
-    background-image: url(loading.gif);
+    background-image: url(https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/css/loading.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -1689,7 +1689,7 @@ body:not(.ewa-ipad) .luckysheet-rows-h-cell-sel:hover {
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:horizontal:increment {
-    background: no-repeat url("waffle_sprite.png") -663px -13px;
+    background: no-repeat url("https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/css/waffle_sprite.png") -663px -13px;
     width: 15px;
     padding-left: 1px;
     background-clip: border-box;
@@ -1701,58 +1701,58 @@ body:not(.ewa-ipad) .luckysheet-rows-h-cell-sel:hover {
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:horizontal:increment:hover {
-    background: no-repeat url("waffle_sprite.png") -395px -62px;
+    background: no-repeat url("https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/css/waffle_sprite.png") -395px -62px;
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:horizontal:increment:active {
-    background: no-repeat url("waffle_sprite.png") -679px -13px;
+    background: no-repeat url("https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/css/waffle_sprite.png") -679px -13px;
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:horizontal:decrement {
     border-left: 1px solid #d9d9d9;
     border-right: 1px solid #d9d9d9;
-    background: no-repeat url("waffle_sprite.png") -283px -62px;
+    background: no-repeat url("https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/css/waffle_sprite.png") -283px -62px;
     width: 17px;
     border-bottom: 1px solid #d9d9d9;
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:horizontal:hover {
-    background: no-repeat url("waffle_sprite.png") -145px -70px;
+    background: no-repeat url("https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/css/waffle_sprite.png") -145px -70px;
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:horizontal:active {
-    background: no-repeat url("waffle_sprite.png") -552px 0;
+    background: no-repeat url("https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/css/waffle_sprite.png") -552px 0;
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:vertical:increment {
     padding-top: 1px;
-    background: no-repeat url("waffle_sprite.png") -531px -24px;
+    background: no-repeat url("https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/css/waffle_sprite.png") -531px -24px;
     border-left: 1px solid #d9d9d9;
     height: 15px;
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:vertical:increment:hover {
-    background: no-repeat url("waffle_sprite.png") -570px -42px;
+    background: no-repeat url("https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/css/waffle_sprite.png") -570px -42px;
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:vertical:increment:active {
-    background: no-repeat url("waffle_sprite.png") -83px -46px;
+    background: no-repeat url("https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/css/waffle_sprite.png") -83px -46px;
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:vertical:decrement {
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
     border-left: 1px solid #d9d9d9;
-    background: no-repeat url("waffle_sprite.png") -631px -27px;
+    background: no-repeat url("https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/css/waffle_sprite.png") -631px -27px;
     height: 17px;
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:vertical:decrement:hover {
-    background: no-repeat url("waffle_sprite.png") -180px -58px;
+    background: no-repeat url("https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/css/waffle_sprite.png") -180px -58px;
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:vertical:decrement:active {
-    background: no-repeat url("waffle_sprite.png") -776px -28px;
+    background: no-repeat url("https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/css/waffle_sprite.png") -776px -28px;
 }
 
 .luckysheet-scrollbar-x {
@@ -1897,7 +1897,7 @@ body:not(.ewa-ipad) .luckysheet-rows-h-cell-sel:hover {
     height: 2px;
     top: 0;
     background-position: bottom;
-    background-image: url("EwaAntH.gif");
+    background-image: url("https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/css/EwaAntH.gif");
 }
 
 .luckysheet-selection-copy-right {
@@ -1905,7 +1905,7 @@ body:not(.ewa-ipad) .luckysheet-rows-h-cell-sel:hover {
     bottom: 0;
     width: 2px;
     right: 0;
-    background-image: url("EwaAntV.gif");
+    background-image: url("https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/css/EwaAntH.gif");
 }
 
 .luckysheet-selection-copy-bottom {
@@ -1913,7 +1913,7 @@ body:not(.ewa-ipad) .luckysheet-rows-h-cell-sel:hover {
     right: 0;
     height: 2px;
     bottom: 0;
-    background-image: url("EwaAntH.gif");
+    background-image:  url("https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/css/EwaAntH.gif");
 }
 
 .luckysheet-selection-copy-left {
@@ -1922,7 +1922,7 @@ body:not(.ewa-ipad) .luckysheet-rows-h-cell-sel:hover {
     width: 2px;
     left: 0;
     background-position: right;
-    background-image: url("EwaAntV.gif");
+    background-image: url("https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/css/EwaAntH.gif");
 }
 
 .luckysheet-selection-copy-hc {
@@ -5089,7 +5089,7 @@ fieldset[disabled] .btn-danger.focus {
 }
 
 .luckysheetPaintCursor {
-    cursor: url(paint_24px.ico), auto;
+    cursor: url(https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/css/paint_24px.ico), auto;
 }
 
 /*        input {
@@ -5522,13 +5522,13 @@ fieldset[disabled] .btn-danger.focus {
 #luckysheet-icon-dataBar-menuButton .bgImgBox {
     width: 28px;
     height: 26px;
-    background: url(../plugins/images/CFdataBar.png) no-repeat;
+    background: url(https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/plugins/images/CFdataBar.png) no-repeat;
 }
 
 #luckysheet-icon-colorGradation-menuButton .bgImgBox {
     width: 28px;
     height: 26px;
-    background: url(../plugins/images/CFcolorGradation.png) no-repeat;
+    background: url(https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/plugins/images/CFcolorGradation.png) no-repeat;
 }
 
 /*条件格式规则管理器*/
@@ -5785,7 +5785,7 @@ fieldset[disabled] .btn-danger.focus {
 .luckysheet-newEditorRule-dialog .iconsBox .showbox .model {
     width: 125px;
     height: 20px;
-    background: url(../plugins/images/CFicons.png) no-repeat;
+    background: url(https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/plugins/images/CFicons.png) no-repeat;
     background-size: 256px;
     float: left;
 }
@@ -5818,7 +5818,7 @@ fieldset[disabled] .btn-danger.focus {
 .luckysheet-newEditorRule-dialog .iconsBox ul li div {
     width: 125px;
     height: 20px;
-    background: url(../plugins/images/CFicons.png) no-repeat;
+    background: url(https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/plugins/images/CFicons.png) no-repeat;
     background-size: 256px;
 }
 
@@ -5866,7 +5866,7 @@ fieldset[disabled] .btn-danger.focus {
 #luckysheet-CFicons-dialog .box .list .item div {
     width: 125px;
     height: 20px;
-    background: url(../plugins/images/CFicons.png) no-repeat;
+    background: url(https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/plugins/images/CFicons.png) no-repeat;
     background-size: 256px;
 }
 
@@ -6222,7 +6222,7 @@ fieldset[disabled] .btn-danger.focus {
 #luckysheet-dropCell-icon #icon_dropCell {
     width: 25px;
     height: 15px;
-    background-image: url(../plugins/images/icon_dropCell.png);
+    background-image: url(https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/plugins/images/icon_dropCell.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -7194,7 +7194,7 @@ fieldset[disabled] .btn-danger.focus {
     content: "";
     width: 10px;
     height: 10px;
-    background: url(arrow-down.png) center no-repeat;
+    background: url(https://fastly.jsdelivr.net/npm/luckysheet-img-with-cell/dist/css/arrow-down.png) center no-repeat;
     position: absolute;
     left: 50%;
     top: 50%;
