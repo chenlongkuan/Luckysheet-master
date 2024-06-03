@@ -238,7 +238,7 @@ function renderCharts(chartLists, isDemo) {
                     $("#luckysheet-rightclick-menu").hide();
                     $("#luckysheet-sheet-list, #luckysheet-rightclick-sheet-menu, #luckysheet-user-menu").hide();
                     $(
-                        "body > .luckysheet-filter-menu, body > .luckysheet-filter-submenu, body > .luckysheet-cols-menu",
+                        "body .luckysheet-filter-menu, body .luckysheet-filter-submenu, body .luckysheet-cols-menu",
                     ).hide();
                 }
 
@@ -1232,7 +1232,7 @@ function createLuckyChart(width, height, left, top) {
                 $("#luckysheet-rightclick-menu").hide();
                 $("#luckysheet-sheet-list, #luckysheet-rightclick-sheet-menu, #luckysheet-user-menu").hide();
                 $(
-                    "body > .luckysheet-filter-menu, body > .luckysheet-filter-submenu, body > .luckysheet-cols-menu",
+                    "body .luckysheet-filter-menu, body .luckysheet-filter-submenu, body .luckysheet-cols-menu",
                 ).hide();
             }
 

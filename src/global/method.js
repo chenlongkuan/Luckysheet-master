@@ -430,7 +430,7 @@ const method = {
     },
     destroy:function(){
         $("#" + Store.container).empty();
-        $("body > .luckysheet-cols-menu").remove();
+        $("body .luckysheet-cols-menu").remove();
 
         $("#luckysheet-modal-dialog-mask, #luckysheetTextSizeTest, #luckysheet-icon-morebtn-div").remove();
         $("#luckysheet-input-box").parent().remove();

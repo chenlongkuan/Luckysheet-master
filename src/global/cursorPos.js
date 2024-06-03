@@ -61,8 +61,8 @@ function hideMenuByCancel(event){
         $("#luckysheet-cols-menu-btn").hide();
         // $("#luckysheet-rightclick-menu").hide();
         $("#luckysheet-sheet-list, #luckysheet-rightclick-sheet-menu, #luckysheet-user-menu").hide();
-        $("body > .luckysheet-filter-menu, body > .luckysheet-filter-submenu, body > .luckysheet-cols-menu").hide();
-        //$("body > luckysheet-menuButton").hide();
+        $("body .luckysheet-filter-menu, body .luckysheet-filter-submenu, body .luckysheet-cols-menu").hide();
+        //$("body luckysheet-menuButton").hide();
         Store.luckysheet_cols_menu_status = false;
     }
 }
