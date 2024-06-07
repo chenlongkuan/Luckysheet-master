@@ -262,11 +262,11 @@ const dataVerificationCtrl = {
         });
         $(document).off("click.dropdownListItem").on("click.dropdownListItem", "#luckysheet-dataVerification-dropdown-List .dropdown-List-item", function (e) {
             var $item = $(this);
-            let value = e.target.innerText;
+            let value = e.target.textContent;
             if ($item.hasClass('multi')) {
                 $item.toggleClass('checked');
                 value = $.map($("#luckysheet-dataVerification-dropdown-List").find(".dropdown-List-item").filter('.checked'), function (el) {
-                    return el.innerText;
+                    return el.textContent;
                 }).join(',');
             } else {
                 $("#luckysheet-dataVerification-dropdown-List").hide();
