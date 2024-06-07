@@ -1515,7 +1515,7 @@ const dataVerificationCtrl = {
         if (item.type === 'dropdown') {           
             list.forEach(i => {
                 let checked = valueArr.indexOf(i) !== -1;
-                optionHtml += `<div class="dropdown-List-item luckysheet-mousedown-cancel multi${checked ? ' checked' : ''}" ${checked ? 'style="background-color:#D3D3D3"' : ''}>${i}</div>`;
+                optionHtml += `<div class="dropdown-List-item luckysheet-mousedown-cancel ${item.type2?'multi':''}${checked ? ' checked' : ''}" ${checked ? 'style="background-color:#D3D3D3"' : ''}>${i}</div>`;
             });
         } else {
             list.forEach(i => {
