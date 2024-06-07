@@ -1,6 +1,6 @@
 {
   "name": "luckysheet-img-with-cell",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "main": "dist/luckysheet.cjs.js",
   "module": "dist/luckysheet.esm.js",
   "browser": "dist/luckysheet.umd.js",
