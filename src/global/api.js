@@ -6399,6 +6399,29 @@ export function deleteDataVerification(options = {}) {
     }
 }
 
+/**
+ * 获取指定列数据验证是否失败
+ * @param {Array of Number} 要检查数据校验是否失败的列数组 
+ * @returns 
+ */
+export function isAnyDataVerificationFailed(colArr) {
+    if (!colArr || colArr.length === 0) return null;
+    let sheetIndex = Store.currentSheetIndex;
+    for (let c = 0; c < colArr.length; c++) {
+        let col = colArr[c];
+        if (Store.flowdata[0].hasOwnProperty(col)) {//是否有这一列
+            for (let row = 0; row < Store.flowdata.length; row++) {
+                let cell = Store.flowdata[row][col];//单元格对象
+                let verifItem=dataVerificationCtrl.dataVerification[row + "_" + col];//验证项
+                if (cell && verifItem && !dataVerificationCtrl.validateCellData(cell.m, verifItem)) {
+                    return true;
+                }
+            }
+        }
+    }
+    return false;
+}
+
 
 /**
  * 在指定的工作表中指定单元格位置插入图片

@@ -1511,7 +1511,7 @@ const dataVerificationCtrl = {
         let optionHtml = '<div class="luckysheet-dropdown-list-content">'; // 添加包裹列表的div
          // 下拉多选的情况下 将已经选择的标出来
          let cellValue = getcellvalue(rowIndex, colIndex, null);
-         let valueArr = isRealNull(cellValue) ? [] : cellValue.split(',');
+         let valueArr = isRealNull(cellValue) ? [] : cellValue.toString().split(',');
         if (item.type === 'dropdown') {           
             list.forEach(i => {
                 let checked = valueArr.indexOf(i) !== -1;
