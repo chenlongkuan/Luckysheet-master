@@ -1605,6 +1605,18 @@ export default function luckysheetHandler() {
             let col_location = colLocation(x),
                 col_index = col_location[2];
 
+            //单元格双击之前
+            if (!method.createHookFunction("cellDbClickBefore",
+                    Store.flowdata[row_index][col_index],
+                    {
+                        r: row_index,
+                        c: col_index
+                    }
+                )
+            ) {
+                return;
+            }
+
             let margeset = menuButton.mergeborer(Store.flowdata, row_index, col_index);
             if (!!margeset) {
                 row_index = margeset.row[2];
