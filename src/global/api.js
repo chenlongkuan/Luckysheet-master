@@ -6412,9 +6412,9 @@ export function isAnyDataVerificationFailed(colArr) {
         if (Store.flowdata[0].hasOwnProperty(col)) {//是否有这一列
             for (let row = 0; row < Store.flowdata.length; row++) {
                 let cell = Store.flowdata[row][col];//单元格对象
-                let verifItem=dataVerificationCtrl.dataVerification[row + "_" + col];//验证项
-                if (cell && verifItem && !dataVerificationCtrl.validateCellData(cell.m, verifItem)) {
-                    return true;
+                let verifItem = dataVerificationCtrl.dataVerification[row + "_" + col];//验证项
+                if (cell && cell.hasOwnProperty("m") && cell.m.toString().length > 0 && verifItem && !dataVerificationCtrl.validateCellData(cell.m, verifItem)) {
+                    return true
                 }
             }
         }
