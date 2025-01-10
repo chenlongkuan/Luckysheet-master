@@ -1,7 +1,7 @@
 import menuButton from './menuButton';
 import formula from '../global/formula';
 import Store from '../store';
-import flatpickr from 'flatpickr-clk'
+import flatpickr from 'flatpickr'
 import dayjs from "dayjs";
 import { update, datenum_local } from '../global/format';
 import { setCellValue, setCellFormat } from '../global/api';
@@ -74,7 +74,6 @@ const cellDatePickerCtrl = {
         if (/A/.test(dateFormat)) {
             time_24hr = false;
         }
-
         const fp = flatpickr('#luckysheet-input-box', {
             allowInput: false,
             noCalendar,
@@ -83,7 +82,14 @@ const cellDatePickerCtrl = {
             dateFormat,
             time_24hr,
             defaultDate,
-            parentElement: window.luckysheet.parentElement,
+            // static:true,
+            // inline:true,
+            appendTo: window.luckysheet.parentElement,
+            onOpen() {
+                $(".flatpickr-calendar").css({
+                    "z-index": (window.luckysheet.parentElement.style.zIndex || 1) + 1
+                })
+            },
             onClose() {
                 setTimeout(() => {
                     fp.destroy()
