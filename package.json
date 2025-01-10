@@ -1,6 +1,6 @@
 {
   "name": "luckysheet-img-with-cell",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "main": "dist/luckysheet.cjs.js",
   "module": "dist/luckysheet.esm.js",
   "browser": "dist/luckysheet.umd.js",
@@ -41,7 +41,7 @@
     "dayjs": "^1.9.6",
     "esbuild": "^0.11.6",
     "escape-html": "^1.0.3",
-    "flatpickr-clk": "^4.6.16",
+    "flatpickr-clk": "^4.6.17",
     "jquery": "^2.2.4",
     "numeral": "^2.0.6",
     "pako": "^1.0.11"
