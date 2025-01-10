@@ -1,7 +1,7 @@
 import menuButton from './menuButton';
 import formula from '../global/formula';
 import Store from '../store';
-import flatpickr from 'flatpickr'
+import flatpickr from 'flatpickr-clk'
 import dayjs from "dayjs";
 import { update, datenum_local } from '../global/format';
 import { setCellValue, setCellFormat } from '../global/api';
@@ -83,6 +83,7 @@ const cellDatePickerCtrl = {
             dateFormat,
             time_24hr,
             defaultDate,
+            parentElement: window.luckysheet.parentElement,
             onClose() {
                 setTimeout(() => {
                     fp.destroy()

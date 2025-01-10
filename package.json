@@ -41,6 +41,7 @@
     "dayjs": "^1.9.6",
     "esbuild": "^0.11.6",
     "escape-html": "^1.0.3",
+    "flatpickr-clk": "^4.6.13",
     "jquery": "^2.2.4",
     "numeral": "^2.0.6",
     "pako": "^1.0.11"
