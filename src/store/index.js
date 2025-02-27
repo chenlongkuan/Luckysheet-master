@@ -167,7 +167,9 @@ const Store = {
         id:'',
     },
     conditionFormatCells: {}, // 条件格式高亮的单元格
-
+    dropCell: {
+        columnDefaults: {} // 格式: {列索引: applyType数值}
+    }
 }
 
 export default Store;

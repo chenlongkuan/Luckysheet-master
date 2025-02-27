@@ -4907,6 +4907,22 @@ export default function luckysheetHandler() {
             last["row"] = [row_s, row_e];
             last["column"] = [col_s, col_e];
 
+            // 列配置检查 START
+            const direction = luckysheetDropCell.direction;
+            let targetCol;
+
+            if (['left', 'right'].includes(direction)) {
+                targetCol = luckysheetDropCell.applyRange.column[0];
+            } else {
+                targetCol = luckysheetDropCell.copyRange.column[0];
+            }
+
+            const columnApplyType = Store.dropCell.columnDefaults?.[targetCol];
+            if (typeof columnApplyType === 'number' && columnApplyType >=0 && columnApplyType <=8) {
+                luckysheetDropCell.applyType = String(columnApplyType);
+            }
+            // 列配置检查 END
+
             luckysheetDropCell.update();
             luckysheetDropCell.createIcon();
 

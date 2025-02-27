@@ -1913,6 +1913,10 @@
 			//      "isPivotTable": false
 			//  };
 			//  luckysheet.sheetmanage.setCustomSheet(customSheetconfig);
+			options.dropCell= {
+				columnDefaults: {0:0} // 格式: {列索引: applyType数值}
+			};
+	
 			luckysheet.create(options);
 		})
 	</script>
